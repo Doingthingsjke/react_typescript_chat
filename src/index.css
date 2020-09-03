@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.px1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.mt1 {
+  margin-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.input-field label {
+  color: #000;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #000;
+}
+
+.chat-history {
+	height: 400px;
+	overflow-y: auto;
+	padding: 10px;
+}
+
+.chat-item {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 15px;
+	margin-left: 0 auto;
+}
+
+.chat-item img {
+	text-align: right;
+	width: 50px;
+	position: inherit;
+	border-radius: 50%;
+	margin-left: 0 auto;
+}
+
+ .chat-item--me .message {
+	margin-left: 20px;
+	background: #f6f6f6;
+}
+
+ .chat-item--other .message {
+	margin-right: 20px;
+  background: #f6f6f6;
+}
+
+.chat-item--other {
+ position: relative;
+}
